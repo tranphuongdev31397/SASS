@@ -1,0 +1,59 @@
+.course{
+    position: relative;
+    .course__bg{
+        position: absolute;
+        bottom:0;
+        z-index:0;
+        object-position: center;
+        object-fit: cover;
+    }
+}
+.course__cell{
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .course__box{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        z-index: 2;
+    }
+    .course__form{
+        
+        h2{
+            width: 100%;
+        }
+        form{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        button{
+            margin: 30px 0 ;
+            width: 100%;
+        }
+    }
+}
+
+//Reponsive
+
+@include repond-to ('medium'){
+    .course__cell{
+        .input__name{
+            width: 48%;
+            margin-right: 10px;
+        }
+        .course__form{
+        button{
+            width: 30%;
+        }
+    }
+}
+}
+@include repond-to('large'){
+    .course__cell{
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,12 @@
+.btn__pink{
+    @include styleButton(white,$color-pink1,10px,25px,transparent,$padding-2,white);
+    font-size: $padding-1;
+    &:hover{
+        @include styleButtonHover(transparent,$color-pink1,$color-pink1);
+        font-size: $padding-1;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+

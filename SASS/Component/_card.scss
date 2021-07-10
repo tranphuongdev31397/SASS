@@ -1,0 +1,27 @@
+.card__title{
+    @include styleTitle(1.5rem,$fw-1,3.15rem,$fw-3);
+    text-align: left;
+}
+.card__intro{
+    @include styleTitle(.8rem,$fw-2,2rem,$fw-3);
+    text-align: center;
+}
+
+.card__teacher{
+    overflow: hidden;
+    .intro__img img{
+        border-radius: 10px 10px 0 0;
+        transition: .5s all;
+        overflow: hidden;
+    }
+    &:hover{
+        .intro__img img{
+            transform: scale3d(1.05,1.05,1.05);
+            overflow: hidden;
+        }
+    }
+    .intro__text{
+        background-color:white;
+        border-radius: 0 0 10px 10px;
+    }
+}
