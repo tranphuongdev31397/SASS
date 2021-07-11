@@ -122,8 +122,8 @@
   <section class="carousel__main">
     <div class="carousel__box">
       <div class="carousel__bg">
-        <img src="./img-sass/yellow_top_wave_01.png" alt="" class="img-fluid">
-        <img src="./img-sass/Violet_top_left_wave.png" alt="" class="img-fluid">
+        <img src="./img-sass/yellow_top_wave_01.png" alt="" class="img-fluid card__bgroundTop">
+        <img src="./img-sass/Violet_top_left_wave.png" alt="" class="img-fluid card__bgroundBottom">
       </div>
     </div>
     <div class="carousel__container container-fluid">
@@ -271,14 +271,14 @@
 
       </div>
     </div>
-    <div class="intro__bg">
+    <div class="intro__bg card__bgroundBottom">
       <img src="./img-sass/Wave_White_bottom_right_shape_01.png" alt="">
     </div>
   </section>
 
   <!-- FIND YOUR COURSE -->
 
-  <section class="course py-3">
+  <section class="course py-5">
     <div class="course__container container">
       <div class="course__cell">
         <div class="course__box">
@@ -307,22 +307,86 @@
               </span>
               <span class="input__form">
                 <i class="fa fa-sms"></i>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" id="" cols="30" rows="2"></textarea>
               </span>
               <br>
               <br>
-              <button class="btn__pink" >SEND</button>
+              <button class="btn__pink">SEND</button>
           </div>
 
         </div>
       </div>
     </div>
-    <div class="course__bg">
-      <img src="./img-sass/accent_bottom_wave_01.png" alt="">
+    <div class="course__bg card__bgroundBottom">
+      <img src="./img-sass/accent_bottom_wave_01.png" class="img-fluid" alt="">
     </div>
     </div>
 
   </section>
+
+  <footer class="py-5">
+    <div class="footer__container container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-3 card__footer">
+          <div class="footer__title">
+            <h3>Contact Us</h3>
+          </div>
+          <div class="footer__content">
+            <ul>
+              <li><span><i class="fa fa-map-marker-alt"></i><span>Franklin St, Greenpoint Ave</span></span></li>
+              <li><span><i class="fa fa-phone"></i><span>+2342 5446 67</span></span></li>
+              <li><span><i class="fa fa-clock"></i><span>Monday - Friday: 8 AM - 5 PM</span></span></li>
+              <li><span><a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a></span></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 card__footer">
+          <div class="footer__title">
+            <h3>Contact Us</h3>
+          </div>
+          <div class="footer__content">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Course</a></li>
+              <li><a href="#">Schedule</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 card__footer">
+          <div class="footer__title">
+            <h3>About</h3>
+          </div>
+          <div class="footer__content">
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Get Quote</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 card__footer footer__form">
+          <div class="footer__title">
+            <h3>Newsletter</h3>
+          </div>
+          <div class="footer__content">
+            <form action="">
+              <input type="e-mail" placeholder="Your email">
+              <button class="btn__white">SUBSCRIBE</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 

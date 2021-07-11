@@ -11,17 +11,7 @@
     .carousel__bg {
         position: relative;
         height: 100%;
-        img:first-of-type {
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        img:last-of-type {
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-        }
+    
     }
 }
 .carousel__container {

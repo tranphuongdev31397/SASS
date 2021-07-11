@@ -9,4 +9,16 @@
         outline: none;
     }
 }
+.btn__white{
+    @include styleButton($color-black1,white,10px,25px,transparent,$padding-2,$color-black1);
+    font-size: $padding-1;
+    font-weight: $fw-3;
+    &:hover{
+        @include styleButtonHover($color-pink1,white,white);
+        font-size: $padding-1;
+    }
+    &:focus{
+        outline: none;
+    }
+}
 
