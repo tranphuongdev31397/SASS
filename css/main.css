@@ -423,6 +423,7 @@ html, body {
 
 .intro .intro__container .intro__box {
   z-index: 2;
+  padding: 15px 20px;
 }
 
 .course {
@@ -517,7 +518,7 @@ html, body {
 }
 
 footer {
-  background-image: url(../../img-sass/footer_background.jpg);
+  background-image: url(../img-sass/footer_background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
