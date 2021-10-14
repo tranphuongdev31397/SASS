@@ -98,7 +98,6 @@ html, body {
 }
 
 .card__teacher .intro__img img {
-  border-radius: 10px 10px 0 0;
   -webkit-transition: .5s all;
   transition: .5s all;
   overflow: hidden;
@@ -202,6 +201,14 @@ html, body {
           box-shadow: 0 0 0 0;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .navbar {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -219,10 +226,11 @@ html, body {
   font-weight: 600;
   padding: 20px;
   position: relative;
+  overflow: hidden;
 }
 
 .navbar .navbar-nav .nav-link:hover::after {
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   z-index: 5;
@@ -252,8 +260,8 @@ html, body {
 .navbar .navbar-toggler .navbar-toggler-icon {
   width: 2em;
   height: 2em;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .navbar .dropdown-toggle::after {
@@ -296,7 +304,7 @@ html, body {
   .navbar__contact .navbar__icon a {
     margin-left: 10px;
     color: #181818;
-    font-size: .9em;
+    font-size: 0.9em;
   }
   .navbar__contact .navbar__icon a:hover {
     background: white;
@@ -350,8 +358,9 @@ html, body {
 
 .carousel__container .carousel__item {
   width: 100%;
-  height: 30%;
+  height: auto;
   padding-top: 80px;
+  overflow: hidden;
 }
 
 .carousel__container .carousel__item:last-of-type img {
@@ -424,6 +433,11 @@ html, body {
 .intro .intro__container .intro__box {
   z-index: 2;
   padding: 15px 20px;
+}
+
+.intro__img {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
 }
 
 .course {
